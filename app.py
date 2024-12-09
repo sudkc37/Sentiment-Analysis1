@@ -14,14 +14,14 @@ tokenizer, model = get_sentiment_analyzer()
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    ticker = request.args.get('ticker', "").strip()
+    ticker = request.args.get('ticker', "TSLA").strip()
     market_sentiment = "N/A"
     sentiment_color = "gray"
     details = None
     plot_img = None  
 
     if request.method == 'POST':
-        ticker = request.form.get('ticker', "").strip()
+        ticker = request.form.get('ticker', "TSLA").strip()
 
     if ticker:
         try:
