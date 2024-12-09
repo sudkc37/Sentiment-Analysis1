@@ -49,17 +49,21 @@ Built with the Flask framework, the application is designed to run on a server, 
 - Create a docker file
 
 - Build a docker image:
+- 
 docker build -t username/appname:latest .
 
 - Check locally before pushing it to docker hub:
+- 
 docker container run -d -p port:imageport username/appname:latest
 
 - Verify:
+- 
 docker container ls
 
 localhost:yourport
 
-- Push image to docker hub
+- Push image to docker hub:
+- 
 docker push username/appname
 
 
