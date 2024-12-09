@@ -9,6 +9,9 @@ The resulting application features a dashboard with a user-friendly interface th
 - Key Real-Time Financial Indicators
 - Market Sentiment Meter
 - Price Chart of a Selected Portfolio Ticker
+  <img width="1438" alt="Screenshot 2024-12-09 at 2 17 15 PM" src="https://github.com/user-attachments/assets/f17aaa86-e154-43d7-acc5-66522ac4a71c">
+<img width="1438" alt="Screenshot 2024-12-09 at 2 17 34 PM" src="https://github.com/user-attachments/assets/a02f5b89-8fd0-4dbc-9695-fc12a9f088bf">
+
 
 The article also provides a simple breakdown and architecture of the model, illustrating the workflow and integration of various components. 
 
