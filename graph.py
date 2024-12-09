@@ -12,13 +12,14 @@ def plot_price(ticker):
     quotes = yf.download(ticker, start=start_date, end=end_date, interval='1m')['Adj Close']
 
     if quotes.empty:
-        return None
+        raise ValueError(f"No data found for ticker: {ticker}")
 
     plt.figure(figsize=(10, 5))
     plt.plot(quotes.index, quotes)
     plt.xlabel('Time')
     plt.ylabel('Price')
     plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d:%I:%M'))
+    plt.gca().xaxis.set_major_locator(mdates.AutoDateLocator())
     plt.xticks(rotation=45)
     plt.tight_layout()
     plot_path = f"static/{ticker}_price_plot.png"
